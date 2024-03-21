@@ -1,2 +1,2 @@
 # bicepparam
-Example how to confirm ALZ-Bicep from Json to Bicepparam parameter files.
+Example how to convert ALZ-Bicep from Json to Bicepparam parameter files.
