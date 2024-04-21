@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "parTopLevelManagementGroupPrefix": {
+      "value": "alz"
+    },
+    "parTopLevelManagementGroupSuffix": {
+      "value": ""
+    },
+    "parTopLevelPolicyAssignmentSovereigntyGlobal": {
+      "value": {
+        "parTopLevelSovereigntyGlobalPoliciesEnable": false,
+        "parListOfAllowedLocations": [],
+        "parPolicyEffect": "Deny"
+      }
+    },
+    "parPlatformMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parLandingZoneChildrenMgAlzDefaultsEnable": {
+      "value": true
+    },
+    "parLandingZoneMgConfidentialEnable": {
+      "value": false
+    },
+    "parPolicyAssignmentSovereigntyConfidential": {
+      "value": {
+        "parAllowedResourceTypes": [],
+        "parListOfAllowedLocations": [],
+        "parAllowedVirtualMachineSKUs": [],
+        "parPolicyEffect": "Deny"
+      }
+    },
+    "parLogAnalyticsWorkSpaceAndAutomationAccountLocation": {
+      "value": "centralus"
+    },
+    "parLogAnalyticsWorkspaceResourceId": {
+      "value": "/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/rg-alz-logging/providers/microsoft.operationalinsights/workspaces/alz-log-analytics"
+    },
+    "parLogAnalyticsWorkspaceLogRetentionInDays": {
+      "value": "365"
+    },
+    "parAutomationAccountName": {
+      "value": "alz-automation-account"
+    },
+    "parMsDefenderForCloudEmailSecurityContact": {
+      "value": "jthompson@lunavi.com"
+    },
+    "parDdosProtectionPlanId": {
+      "value": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-alz-connectivity/providers/Microsoft.Network/ddosProtectionPlans/alz-ddos-plan"
+    },
+    "parPrivateDnsResourceGroupId": {
+      "value": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-alz-connectivity"
+    },
+    "parPrivateDnsZonesNamesToAuditInCorp": {
+      "value": []
+    },
+    "parDisableAlzDefaultPolicies": {
+      "value": false
+    },
+    "parVmBackupExclusionTagName": {
+      "value": ""
+    },
+    "parVmBackupExclusionTagValue": {
+      "value": []
+    },
+    "parExcludedPolicyAssignments": {
+      "value": []
+    },
+    "parTelemetryOptOut": {
+      "value": false
+    }
+  }
+}
