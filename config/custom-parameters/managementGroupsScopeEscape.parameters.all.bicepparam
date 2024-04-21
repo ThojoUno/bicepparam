@@ -1,5 +1,5 @@
 /* 
-  managementGroups.bicepparam
+  managementGroupsScopeEscape.parameters.bicepparam
   Author: JThompson
   Date: 2024-02-24
   Version: 1.0
@@ -10,7 +10,7 @@
 
 */
 
-using '../../upstream-releases/v0.17.0/infra-as-code/bicep/modules/managementGroups/managementGroups.bicep'
+using '../../upstream-releases/v0.17.2/infra-as-code/bicep/modules/managementGroups/managementGroupsScopeEscape.bicep'
 
 param parTopLevelManagementGroupPrefix = readEnvironmentVariable('TOP_LEVEL_MG_PREFIX','alz')
 param parTopLevelManagementGroupSuffix = readEnvironmentVariable('TOP_LEVEL_MG_SUFFIX','')
